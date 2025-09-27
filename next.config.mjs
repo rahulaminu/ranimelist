@@ -10,10 +10,6 @@ const nextConfig = {
             }
         ]
     },
-    experimental: {
-        // Enable if you're using app directory
-        appDir: true,
-    },
 }
 
 
