@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import Header from "@/components/dashboard/header"
+import Header from "@/components/dashboard/Header"
 import prisma from "@/libs/prisma"
 import { authUserSession } from "@/libs/auth-libs"
 
