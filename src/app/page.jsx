@@ -5,7 +5,7 @@ import { getAnimeResponse, getNestedAnimeResponse, reproduce } from "@/libs/api-
 const Page = async () => {
 
   const topAnime = await getAnimeResponse("top/anime", "limit=10")
-  let recommendedAnime = await getNestedAnimeResponse("recommendations/anime", "entry")
+  let recommendedAnime = await getNestedAnimeResponse("recommendations/anime", "entry", "limit=20")
   recommendedAnime = reproduce(recommendedAnime, 10)
   return (
     <>
